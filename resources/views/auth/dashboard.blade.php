@@ -4,7 +4,9 @@
 
 @section('content')
 <!--about start -->
-<div class="container"> <section id="about" class="about"> <div class="section-heading text-center">
+<div class="container"> 
+    <section id="about" class="about"> 
+        <div class="section-heading text-center">
     <h2>about me</h2>
 </div>
 <div class="container">
@@ -668,15 +670,15 @@
                             <div class="contact-add-info">
                                 <div class="single-contact-add-info">
                                     <h3>phone</h3>
-                                    <p>987-123-6547</p>
+                                    <p>+62 857 2770 6328</p>
                                 </div>
                                 <div class="single-contact-add-info">
                                     <h3>email</h3>
-                                    <p>browny@info.com</p>
+                                    <p>aisaselvira@mail.ugm.ac.id</p>
                                 </div>
                                 <div class="single-contact-add-info">
                                     <h3>website</h3>
-                                    <p>www.brownsine.com</p>
+                                    <p>www.aisaselvira.com</p>
                                 </div>
                             </div>
                         </div>

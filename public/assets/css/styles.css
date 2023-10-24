@@ -230,11 +230,11 @@ section {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #2d71a1;
+    border: 1px solid #a12d74;
 }
 
 .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #2d71a1;
+    background-color: #a12d6f;
 }
 
 /* Pricing */
@@ -678,8 +678,14 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #fff;
+    color: #ffffff;
+    text-decoration: underline;
+    /* Menambahkan garis bawah */
+    padding-bottom: 3px;
+    /* Menambahkan jarak antara garis bawah dan teks */
 }
+
+
 
 .navbar .dropdown ul {
     display: block;

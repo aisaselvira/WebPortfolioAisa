@@ -1,47 +1,36 @@
 <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta content="width=device-width, initial-scale=1.0"
-    name="viewport">
-<link
+    name="viewport"> <link
     href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet"> <link href="assets/vendor/aos/aos.css" rel="stylesheet"> <link
+    href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <link
+    href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/styles.css"rel="stylesheet"> </head> <body> <header id="header" class="fixed-top d-flex
+    align-items-center"> <div class="container d-flex justify-content-between align-items-center"> <div class="logo">
+    <h1><a href="index.html">Portfolio</a></h1> </div>
 
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
-<link href="assets/css/styles.css"rel="stylesheet"> 
-</head>
-
-<body> <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between align-items-center">
-
-    <div class="logo">
-        <h1><a href="index.html">Portfolio</a></h1>
-        </div>
-
-        <nav id="navbar" class="navbar">
-        <ul>
-        <li><a class="active " href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#profiles">Profile</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <ul class="navbar-nav ms-auto">
+<nav id="navbar" class="navbar">
+<ul>
+    <li><a class="active " href="dashboard">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#profiles">Profile</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+    <ul class="navbar-nav ms-auto">
         @guest
         <li class="nav-item">
-            <a href="{{ route('login') }}"
-            class="nav-link {{ request()->is('login') ? 'active' : '' }}">Login</a>
+            <a href="{{ route('login') }}" class="nav-link {{ request()->is('login') ? 'active' : '' }}">Login</a>
         </li>
         <li class="nav-item">
-        <a href="{{ route('register') }}"
-        class="nav-link {{ request()->is('register') ? 'active' : '' }}">Register</a>
+            <a href="{{ route('register') }}"
+                class="nav-link {{ request()->is('register') ? 'active' : '' }}">Register</a>
         </li>
         @else
         <li class="nav-item dropdown">
-            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ Auth::user()->name }}
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ Auth::user()->name }}
             </a>
             <ul class="dropdown-menu">
                 <li>
@@ -54,9 +43,9 @@
             </ul>
         </li>
         @endguest
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
 
     </div>
     </header>
@@ -86,8 +75,10 @@
                             <h1 data-aos="fade-right">I'm Aisa Selvira</h1>
                             <p class="mb-5" data-aos="fade-right" data-aos-delay="100">UI/UX Designer & Front End
                                 Developer</p>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#"
-                                    class="btn btn-outline-white">Download CV</a></p>
+                            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
+                                <a href="assets/file/CV_AisaSelvira.pdf" download="CV_AisaSelvira.pdf"
+                                    class="btn btn-outline-white">Download CV</a>
+                            </p>
                         </div>
                         <div class="col-lg-4 iphone-wrap">
                             <img src="assets/img/me3.png" alt="Image" class="phone-1" data-aos="fade-right">
